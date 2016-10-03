@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'help', to: 'static_pages#help', as: 'help'
   get 'contact', to: 'static_pages#contact', as: 'contact'
   get 'new', to: 'users#new', as: 'signup'
+  resources :users
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

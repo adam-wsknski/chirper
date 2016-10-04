@@ -1,1 +1,4 @@
-#emptied by me! Adam
+adam:
+  name: adam wsknski
+  email: adam@co.pl
+  password_digest: <%= User.digest('password') %>

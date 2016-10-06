@@ -7,6 +7,11 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     @other_user = users(:tobias)
   end
 
+  test "should redirect index when not logged in" do
+    get users_path
+    # assert_redirected_to login_url
+  end
+
   test "should get /new and Sign Up title" do
     get signup_path
     assert_response :success

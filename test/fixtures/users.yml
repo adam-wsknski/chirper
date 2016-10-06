@@ -7,3 +7,20 @@ tobias:
   name: Matias Tobias
   email: tobias@de.de
   password_digest: <%= User.digest('password') %>
+
+ladam:
+  name: adam
+  email: ladam@co.pl
+  password_digest: <%= User.digest('password') %>
+
+ltobias:
+  name: Matias Tobias
+  email: ltobias@de.de
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name: <%= "User #{n}" %>
+  email: <%= "easqwe#{n}@gov.pl" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

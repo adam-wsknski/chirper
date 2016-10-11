@@ -52,4 +52,14 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_url
   end
 
+  test "should redirect destroy when user not logged in" do
+    assert_no_difference 'User.count' do
+      delete user_url(@user)
+    end
+    assert_redirected_to '/login'
+  end
+
+  test "should redirect destroy when user not an admin" do
+  end
+
 end

@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+apple:
+  content: "Who ate my apple?"
+  created_at: <%= 10.minutes.ago %>
+  user: adam
+
+tau_manifesto:
+  content: "Don't eat pies, eat tau"
+  created_at: <%= 2.years.ago %>
+  user: adam
+
+cat_video:
+  content: "Watch cats, not drugs"
+  created_at: <%= 5.days.ago %>
+  user: adam
+
+dog_video:
+  content: "Watch dogs, not rugs"
+  created_at: <%= 1.days.ago %>
+  user: adam
+
+most_recent:
+  content: "I'am most recent now!"
+  created_at: <%= Time.zone.now %>
+  user: adam
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 10.days.ago %>
+  user: adam
+<% end %>
+
+glass:
+  content: "I'am made of glass!"
+  created_at: <%= 2.years.ago %>
+  user: tobias
+
+desk:
+  content: "I like desks!"
+  created_at: <%= 50.days.ago %>
+  user: tobias
+
+shoes:
+  content: "I ate a shoe yesterday"
+  created_at: <%= 5.days.ago %>
+  user: tobias
+
+quack:
+  content: "the sound a cat makes"
+  created_at: <%= 1.year.ago %>
+  user: ladam
+
+howgh:
+  content: "a duck makes"
+  created_at: <%= 1.day.ago %>
+  user: ladam
+
+plaster:
+  content: "cool word"
+  created_at: <%= 3.years.ago %>
+  user: ladam

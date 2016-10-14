@@ -1,0 +1,15 @@
+one:
+  follower: adam
+  followed: tobias
+
+two:
+  follower: ladam
+  followed: adam
+
+two:
+  follower: ltobias
+  followed: adam
+
+four:
+  follower: adam
+  followed: ltobias

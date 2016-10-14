@@ -55,7 +55,7 @@ quack:
 howgh:
   content: "a duck makes"
   created_at: <%= 1.day.ago %>
-  user: ladam
+  user: ltobias
 
 plaster:
   content: "cool word"

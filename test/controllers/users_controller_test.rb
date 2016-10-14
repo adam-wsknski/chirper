@@ -62,4 +62,14 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should redirect destroy when user not an admin" do
   end
 
+  test "should redirect following when user not logged in" do
+    get "/users/:id/following", id: @user
+    assert_redirected_to '/login'
+  end
+
+  test "should redirect followers when user not logged in" do
+    get "/users/:id/followers", id: @user
+    assert_redirected_to '/login'
+  end
+
 end
